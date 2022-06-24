@@ -6,8 +6,7 @@ import {withRouter} from "react-router-dom";
 const Home = (props) => {
 
     useEffect(() => {
-        console.log(localStorage.getItem('userData'))
-        const userData = localStorage.getItem('userData') ? JSON.parse(decodeURIComponent(atob(localStorage.getItem('userData')))) : null;
+    const userData = localStorage.getItem('userData') ? JSON.parse(decodeURIComponent(atob(localStorage.getItem('userData')))) : null;
         if (!userData) {
             props.history.push('/register')
         }
