@@ -14,4 +14,4 @@
 
 - ## Backend
 1. ```cd movie-backend```
-2. ```npm install &&  nodemon server.js```
+2. ```npm install &&  node index.js```
