@@ -13,5 +13,5 @@
  2. ```npm install && npm run start```
 
 - ## Backend
-1. ```cd movies-backend```
+1. ```cd movie-backend```
 2. ```npm install &&  nodemon server.js```
