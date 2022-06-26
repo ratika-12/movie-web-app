@@ -7,7 +7,7 @@ app.use(express.json())
 app.use(express.urlencoded())
 app.use(cors())
 
-mongoose.connect("mongodb://localhost:27017/", {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/movie-user', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, () => {
