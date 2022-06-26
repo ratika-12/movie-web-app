@@ -21,7 +21,7 @@ const Login = ({ updateUser}) => {
     }
 
     const login = () => {
-        axios.post("http://localhost:9002/login", user)
+        axios.post("https://ancient-mountain-62042.herokuapp.com/login", user)
         .then(res => {
             alert(res.data.message)
             updateUser(res.data.user)
